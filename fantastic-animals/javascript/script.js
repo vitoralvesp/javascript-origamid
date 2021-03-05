@@ -42,9 +42,14 @@ menu[0].classList.add('ativo');
 // Verifique se as imagens possuem o atributo alt
 images.forEach((image) => {
     const attribute = image.hasAttribute('alt');
-    console.log(img. attribute);
+    //console.log(img. attribute);
 })
 
 // Modifique o link interno
 const link = document.querySelector('a[href^="http"');
 link.setAttribute('href',  'www.google.com');
+
+// Verifique a distância da primeira img em relação ao topo da página
+const whereIsImage = document.querySelector('img');
+const isOnTop = whereIsImage.offsetTop;
+console.log(isOnTop);
