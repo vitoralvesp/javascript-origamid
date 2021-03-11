@@ -12,5 +12,15 @@ Pessoa.prototype.nomeCompleto = function() {
     return `${this.nome} ${this.sobrenome}`;
 }
 
+const li = document.querySelector('li');
 
+li; // HTMLLIElement
+li.click; // Function
+li.innerHTML; // String
+li.value; // Number
+li.hidden; // Boolean
+li.offsetLeft; // Number
+li.click(); // undefined
 
+// Qual o construtor do dado abaixo:
+li.hidden.constructor.name; // String
