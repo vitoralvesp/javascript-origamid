@@ -41,19 +41,3 @@ listaPrecos.forEach((preco) => {
     soma = soma + limparPreco(preco);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
