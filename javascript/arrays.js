@@ -11,12 +11,12 @@ console.log(lastValue); // return 'Macarrão'
 
 
 // Adicione 'Arroz' ao final da array
-comidas.unshift('Arroz');
-console.log(comidas); // return ['Arroz', 'Frango', 'Carne']
+comidas.push('Arroz');
+console.log(comidas); // return ['Frango', 'Carne', 'Arroz']
 
 
 // Adicione 'Peixe' e 'Batata' ao início da array
-comidas.push('Peixe', 'Batata');
+comidas.unshift('Peixe', 'Batata');
 console.log(comidas); // return ['Arroz', 'Frango', 'Carne', 'Peixe', 'Batata']
 
 
@@ -29,8 +29,8 @@ console.log(organizedStudents);
 
 
 // Inverta a ordem dos estudantes
-const disorganizedStudents = estudantes.reverse();
-console.log(disorganizedStudents);
+const reverseStudents = estudantes.reverse();
+console.log(reverseStudents);
 
 
 // Verifique se Joana faz parte dos estudantes
@@ -50,11 +50,14 @@ let html = `<section>
             </section>`
 // Substitua section por ul e div com li,
 // utilizando split e join
-const removeSection = html.split('section');
-const removeDiv = html.split('div');
+html = html.split('section');
+html = html.join('ul');
 
-// const addUlElement = html.join('ul');
-// const addLiElement = html.join('li');
+html = html.split('div');
+html = html.join('li');
+
+console.log(html);
+
 
 
 const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
