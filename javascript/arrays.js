@@ -74,6 +74,38 @@ console.log(removeElement); // return 'Honda'
 // Selecione cada curso e retorne uma array
 // com objetos contendo o título, descricao,
 // aulas e horas de cada curso
+const origamidCourses = document.querySelectorAll('.curso');
+const arrayCourses = Array.from(origamidCourses);
+
+const objectCourses = arrayCourses.map((course) => {
+  const title = course.querySelector('h1').innerText;
+  const description = course.querySelector('p').innerText;
+  const classes = course.querySelector('.aulas').innerText;
+  const hours = course.querySelector('.horas').innerText;
+  return {
+    title,
+    description,
+    classes,
+    hours
+  };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Retorne uma lista com os
