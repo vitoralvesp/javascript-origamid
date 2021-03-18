@@ -97,6 +97,9 @@ const objectCourses = arrayCourses.map((course) => {
 const numeros = [3, 44, 333, 23, 122, 322, 33];
 const arrayNumber = numeros.filter(n => n > 100);
 
+console.log(numeros);
+console.log(arrayNumber);
+
 
 // Verifique se Baixo faz parte
 // da lista de instrumentos e retorne true
