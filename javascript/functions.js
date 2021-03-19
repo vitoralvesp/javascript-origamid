@@ -27,4 +27,16 @@ function Dom(selector) {
     this.element = document.querySelector(selector);
 }
 
-const ul = new Dom('ul'); //  
+Dom.prototype.ativo = function(classe) {
+    this.element.classList.add(classe);
+}
+
+const ul = new Dom('ul'); // Dom object
+
+
+const li = {
+    element: document.querySelector('li')
+}
+
+ul.ativo.call(li, 'ativo');
+ul.ativo('ativar');
