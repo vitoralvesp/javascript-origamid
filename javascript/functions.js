@@ -14,4 +14,17 @@ function decricaoCarro() {
 }
 
 descricaoCarro.call({marca: 'Honda', ano: 2015}); // return Honda 2015
+  
  
+const frutas = ['Banana', 'Uva', 'Pera'];
+
+frutas.forEach().call(frutas, (item) => {
+    console.log(item);
+});
+
+
+function Dom(selector) {
+    this.element = document.querySelector(selector);
+}
+
+const ul = new Dom('ul'); //  
