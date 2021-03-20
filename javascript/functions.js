@@ -47,4 +47,3 @@ Math.max.apply(null, numeros); // return 44
 
 
 const $ = document.querySelectorAll.bind(document); // NodeList
-
