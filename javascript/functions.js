@@ -40,3 +40,11 @@ const li = {
 
 ul.ativo.call(li, 'ativo');
 ul.ativo('ativar');
+
+
+const numeros = [3, 4, 6, 1, 34, 44, 32];
+Math.max.apply(null, numeros); // return 44
+
+
+const $ = document.querySelectorAll.bind(document); // NodeList
+
