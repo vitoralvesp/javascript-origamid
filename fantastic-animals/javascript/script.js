@@ -1,3 +1,4 @@
+/*
 function initTabNav() {
     const tabMenu = document.querySelectorAll('.js-tabmenu li');
     const tabContent = document.querySelectorAll('.js-tabcontent section');
@@ -22,7 +23,9 @@ function initTabNav() {
 };
 
 initTabNav();
+*/
 
+/*
 function initAccordion() {
     const accordionList = document.querySelectorAll('.js-accordion dt');
     const classActive = 'active';
@@ -41,8 +44,11 @@ function initAccordion() {
     }
 };
 
-initAccordion();
 
+initAccordion();
+*/
+
+/*
 function initScroll() {
     const internLinks = document.querySelectorAll('.js-menu a[href^="#"]');
 
@@ -62,7 +68,7 @@ function initScroll() {
             top: top,
             behavior: 'smooth',
         });
-        */
+        
     }
     
     internLinks.forEach((link) => {
@@ -71,8 +77,9 @@ function initScroll() {
 };
 
 initScroll();
+*/
 
-
+/*
 function initAnimacaoScroll() {
     const sections = document.querySelectorAll('.js-scroll');
     if(sections.length) {
@@ -94,4 +101,6 @@ function initAnimacaoScroll() {
       window.addEventListener('scroll', animaScroll);
     }
   }
+
   initAnimacaoScroll();
+*/
