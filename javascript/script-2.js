@@ -49,4 +49,7 @@ const animals = document.querySelector('.animais');
 faq.innerHTML = animals.innerHTML;
 
 
+console.log(animals);
+
+
 
