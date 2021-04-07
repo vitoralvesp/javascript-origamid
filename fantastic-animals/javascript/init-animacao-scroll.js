@@ -9,8 +9,9 @@ export default function initAnimacaoScroll() {
         const isSectionVisible = (sectionTop - windowMetade) < 0;
         if(isSectionVisible)
           section.classList.add('active');
-        else 
+        else if (section.classList.contains('active')) {
           section.classList.remove('active');
+        }
       });
     };
   
