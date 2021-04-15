@@ -1,10 +1,14 @@
 const promise = new Promise(function(resolve, reject) {
     let condicao = true;
     if (condicao) {
-        resolve();
+        setTimeout(() => {
+            resolve('Vitor');
+        }, 1000);
     } else {
         reject(Error('Um erro ocorreu na promise'));
     }
 });
 
-console.log(promise);
+promise.then(function(resolution) {
+    console.log(resolution);
+})
