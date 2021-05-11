@@ -6,8 +6,8 @@ import initModal from './modal.js';
 import initTooltip from './tooltip.js';
 import initDropdownMenu from './dropdown-menu.js';
 import initMenuMobile from './menu-mobile.js';
-import initNumbers from './numeros.js';
 import initFuncionamento from './funcionamento.js';
+import initFetchAnimais from './fetch-animais.js';
 
 initScroll();
 initAnimacaoScroll();
@@ -17,5 +17,5 @@ initModal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
-initNumbers();
 initFuncionamento();
+initFetchAnimais();
